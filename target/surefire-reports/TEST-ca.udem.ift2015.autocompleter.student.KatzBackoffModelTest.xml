@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest" time="0.037" tests="24" errors="24" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/justinetheriault/Downloads/tp-autocompleter/target/test-classes:/Users/justinetheriault/Downloads/tp-autocompleter/target/classes:/Users/justinetheriault/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/justinetheriault/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/justinetheriault/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/justinetheriault/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/justinetheriault/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/justinetheriault/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/justinetheriault/.m2/repository/org/junit/platform/junit-platform-launcher/1.10.2/junit-platform-launcher-1.10.2.jar:/Users/justinetheriault/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/Users/justinetheriault/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/justinetheriault/.m2/repository/org/openjfx/javafx-controls/23.0.1/javafx-controls-23.0.1.jar:/Users/justinetheriault/.m2/repository/org/openjfx/javafx-controls/23.0.1/javafx-controls-23.0.1-mac-aarch64.jar:/Users/justinetheriault/.m2/repository/org/openjfx/javafx-graphics/23.0.1/javafx-graphics-23.0.1.jar:/Users/justinetheriault/.m2/repository/org/openjfx/javafx-graphics/23.0.1/javafx-graphics-23.0.1-mac-aarch64.jar:/Users/justinetheriault/.m2/repository/org/openjfx/javafx-base/23.0.1/javafx-base-23.0.1.jar:/Users/justinetheriault/.m2/repository/org/openjfx/javafx-base/23.0.1/javafx-base-23.0.1-mac-aarch64.jar:/Users/justinetheriault/.m2/repository/org/kordamp/ikonli/ikonli-javafx/12.3.1/ikonli-javafx-12.3.1.jar:/Users/justinetheriault/.m2/repository/org/kordamp/ikonli/ikonli-core/12.3.1/ikonli-core-12.3.1.jar:/Users/justinetheriault/.m2/repository/org/kordamp/ikonli/ikonli-fontawesome5-pack/12.3.1/ikonli-fontawesome5-pack-12.3.1.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CA"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/25.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/justinetheriault/Downloads/tp-autocompleter/target/surefire/surefirebooter-20260326124846568_3.jar /Users/justinetheriault/Downloads/tp-autocompleter/target/surefire 2026-03-26T12-48-46_522-jvmRun1 surefire-20260326124846568_1tmp surefire_0-20260326124846568_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/justinetheriault/Downloads/tp-autocompleter/target/test-classes:/Users/justinetheriault/Downloads/tp-autocompleter/target/classes:/Users/justinetheriault/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/justinetheriault/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/justinetheriault/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/justinetheriault/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/justinetheriault/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/justinetheriault/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/justinetheriault/.m2/repository/org/junit/platform/junit-platform-launcher/1.10.2/junit-platform-launcher-1.10.2.jar:/Users/justinetheriault/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/Users/justinetheriault/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/justinetheriault/.m2/repository/org/openjfx/javafx-controls/23.0.1/javafx-controls-23.0.1.jar:/Users/justinetheriault/.m2/repository/org/openjfx/javafx-controls/23.0.1/javafx-controls-23.0.1-mac-aarch64.jar:/Users/justinetheriault/.m2/repository/org/openjfx/javafx-graphics/23.0.1/javafx-graphics-23.0.1.jar:/Users/justinetheriault/.m2/repository/org/openjfx/javafx-graphics/23.0.1/javafx-graphics-23.0.1-mac-aarch64.jar:/Users/justinetheriault/.m2/repository/org/openjfx/javafx-base/23.0.1/javafx-base-23.0.1.jar:/Users/justinetheriault/.m2/repository/org/openjfx/javafx-base/23.0.1/javafx-base-23.0.1-mac-aarch64.jar:/Users/justinetheriault/.m2/repository/org/kordamp/ikonli/ikonli-javafx/12.3.1/ikonli-javafx-12.3.1.jar:/Users/justinetheriault/.m2/repository/org/kordamp/ikonli/ikonli-core/12.3.1/ikonli-core-12.3.1.jar:/Users/justinetheriault/.m2/repository/org/kordamp/ikonli/ikonli-fontawesome5-pack/12.3.1/ikonli-fontawesome5-pack-12.3.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/justinetheriault"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-10-21"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/25.0.1/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/justinetheriault/Downloads/tp-autocompleter"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/justinetheriault/Downloads/tp-autocompleter/target/surefire/surefirebooter-20260326124846568_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="25.0.1"/>
+    <property name="user.name" value="justinetheriault"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="26.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/justinetheriault/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/4f/synjr9pj64q97jrkg39ts9b40000gn/T/"/>
+    <property name="java.version" value="25.0.1"/>
+    <property name="user.dir" value="/Users/justinetheriault/Downloads/tp-autocompleter"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/justinetheriault/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="25.0.1"/>
+    <property name="stdin.encoding" value="UTF-8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="completeKLargerThanMatches" classname="ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest" time="0.01">
+    <error message="TODO 11 — train non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.completeKLargerThanMatches(KatzBackoffModelTest.java:266)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="topKKLargerThanVocab" classname="ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest" time="0.001">
+    <error message="TODO 11 — train non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.topKKLargerThanVocab(KatzBackoffModelTest.java:166)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="topKNoContext_usesUnigrams" classname="ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest" time="0.001">
+    <error message="TODO 11 — train non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.topKNoContext_usesUnigrams(KatzBackoffModelTest.java:150)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="countsZeroBeforeTraining" classname="ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest" time="0.001">
+    <error message="TODO 4 — vocabulary non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 4 — vocabulary non implémenté
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTable.vocabulary(HashFrequencyTable.java:60)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.unigramCount(KatzBackoffModel.java:107)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.countsZeroBeforeTraining(KatzBackoffModelTest.java:54)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="topKUsesTrigramWhenAvailable" classname="ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest" time="0.001">
+    <error message="TODO 11 — train non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.topKUsesTrigramWhenAvailable(KatzBackoffModelTest.java:111)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="predictOnUntrained_returnsNull" classname="ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest" time="0.001">
+    <error message="TODO 13 — predict non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 13 — predict non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.predict(KatzBackoffModel.java:86)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.predictOnUntrained_returnsNull(KatzBackoffModelTest.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="topKOnUntrained_returnsEmpty" classname="ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest" time="0.0">
+    <error message="TODO 12 — topK non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 12 — topK non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.topK(KatzBackoffModel.java:75)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.topKOnUntrained_returnsEmpty(KatzBackoffModelTest.java:49)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="frequencyReturnsUnigramCount" classname="ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest" time="0.0">
+    <error message="TODO 11 — train non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.frequencyReturnsUnigramCount(KatzBackoffModelTest.java:206)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="trigramCountAfterTraining" classname="ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest" time="0.001">
+    <error message="TODO 11 — train non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.trigramCountAfterTraining(KatzBackoffModelTest.java:80)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="topKBackoffToUnigramWhenNoBigram" classname="ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest" time="0.0">
+    <error message="TODO 11 — train non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.topKBackoffToUnigramWhenNoBigram(KatzBackoffModelTest.java:140)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="topKDoubleBackoffToUnigram" classname="ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest" time="0.0">
+    <error message="TODO 11 — train non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.topKDoubleBackoffToUnigram(KatzBackoffModelTest.java:189)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="topKZeroReturnsEmpty" classname="ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest" time="0.001">
+    <error message="TODO 11 — train non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.topKZeroReturnsEmpty(KatzBackoffModelTest.java:160)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="topKBackoffToBigramWhenNoTrigram" classname="ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest" time="0.0">
+    <error message="TODO 11 — train non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.topKBackoffToBigramWhenNoTrigram(KatzBackoffModelTest.java:125)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="completeRankedByFrequency" classname="ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest" time="0.001">
+    <error message="TODO 11 — train non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.completeRankedByFrequency(KatzBackoffModelTest.java:243)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="completeUnknownPrefix_returnsEmpty" classname="ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest" time="0.0">
+    <error message="TODO 11 — train non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.completeUnknownPrefix_returnsEmpty(KatzBackoffModelTest.java:254)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="trainingAccumulatesBigramCount" classname="ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest" time="0.0">
+    <error message="TODO 11 — train non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.trainingAccumulatesBigramCount(KatzBackoffModelTest.java:198)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="completeReturnsWordsWithPrefix" classname="ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest" time="0.001">
+    <error message="TODO 11 — train non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.completeReturnsWordsWithPrefix(KatzBackoffModelTest.java:232)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="bigramCountAfterTraining" classname="ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest" time="0.0">
+    <error message="TODO 11 — train non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.bigramCountAfterTraining(KatzBackoffModelTest.java:73)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="sentenceBoundaryResetsContext" classname="ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest" time="0.0">
+    <error message="TODO 11 — train non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.sentenceBoundaryResetsContext(KatzBackoffModelTest.java:95)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="strictBackoffTrigramNotFilledFromBigram" classname="ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest" time="0.0">
+    <error message="TODO 11 — train non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.strictBackoffTrigramNotFilledFromBigram(KatzBackoffModelTest.java:175)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="completeKZero_returnsEmpty" classname="ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest" time="0.0">
+    <error message="TODO 11 — train non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.completeKZero_returnsEmpty(KatzBackoffModelTest.java:260)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="trainingAccumulatesAcrossSentences" classname="ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest" time="0.001">
+    <error message="TODO 11 — train non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.trainingAccumulatesAcrossSentences(KatzBackoffModelTest.java:86)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="unigramCountAfterTraining" classname="ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest" time="0.0">
+    <error message="TODO 11 — train non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.unigramCountAfterTraining(KatzBackoffModelTest.java:66)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="predictTwoWords_trigram" classname="ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest" time="0.001">
+    <error message="TODO 11 — train non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.predictTwoWords_trigram(KatzBackoffModelTest.java:218)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+</testsuite>

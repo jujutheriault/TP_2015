@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="ca.udem.ift2015.autocompleter.student.PrefixTrieTest" time="0.021" tests="18" errors="18" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/justinetheriault/Downloads/tp-autocompleter/target/test-classes:/Users/justinetheriault/Downloads/tp-autocompleter/target/classes:/Users/justinetheriault/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/justinetheriault/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/justinetheriault/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/justinetheriault/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/justinetheriault/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/justinetheriault/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/justinetheriault/.m2/repository/org/junit/platform/junit-platform-launcher/1.10.2/junit-platform-launcher-1.10.2.jar:/Users/justinetheriault/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/Users/justinetheriault/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/justinetheriault/.m2/repository/org/openjfx/javafx-controls/23.0.1/javafx-controls-23.0.1.jar:/Users/justinetheriault/.m2/repository/org/openjfx/javafx-controls/23.0.1/javafx-controls-23.0.1-mac-aarch64.jar:/Users/justinetheriault/.m2/repository/org/openjfx/javafx-graphics/23.0.1/javafx-graphics-23.0.1.jar:/Users/justinetheriault/.m2/repository/org/openjfx/javafx-graphics/23.0.1/javafx-graphics-23.0.1-mac-aarch64.jar:/Users/justinetheriault/.m2/repository/org/openjfx/javafx-base/23.0.1/javafx-base-23.0.1.jar:/Users/justinetheriault/.m2/repository/org/openjfx/javafx-base/23.0.1/javafx-base-23.0.1-mac-aarch64.jar:/Users/justinetheriault/.m2/repository/org/kordamp/ikonli/ikonli-javafx/12.3.1/ikonli-javafx-12.3.1.jar:/Users/justinetheriault/.m2/repository/org/kordamp/ikonli/ikonli-core/12.3.1/ikonli-core-12.3.1.jar:/Users/justinetheriault/.m2/repository/org/kordamp/ikonli/ikonli-fontawesome5-pack/12.3.1/ikonli-fontawesome5-pack-12.3.1.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CA"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/25.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/justinetheriault/Downloads/tp-autocompleter/target/surefire/surefirebooter-20260326124846568_3.jar /Users/justinetheriault/Downloads/tp-autocompleter/target/surefire 2026-03-26T12-48-46_522-jvmRun1 surefire-20260326124846568_1tmp surefire_0-20260326124846568_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/justinetheriault/Downloads/tp-autocompleter/target/test-classes:/Users/justinetheriault/Downloads/tp-autocompleter/target/classes:/Users/justinetheriault/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar:/Users/justinetheriault/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/Users/justinetheriault/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/justinetheriault/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/Users/justinetheriault/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar:/Users/justinetheriault/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar:/Users/justinetheriault/.m2/repository/org/junit/platform/junit-platform-launcher/1.10.2/junit-platform-launcher-1.10.2.jar:/Users/justinetheriault/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:/Users/justinetheriault/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/justinetheriault/.m2/repository/org/openjfx/javafx-controls/23.0.1/javafx-controls-23.0.1.jar:/Users/justinetheriault/.m2/repository/org/openjfx/javafx-controls/23.0.1/javafx-controls-23.0.1-mac-aarch64.jar:/Users/justinetheriault/.m2/repository/org/openjfx/javafx-graphics/23.0.1/javafx-graphics-23.0.1.jar:/Users/justinetheriault/.m2/repository/org/openjfx/javafx-graphics/23.0.1/javafx-graphics-23.0.1-mac-aarch64.jar:/Users/justinetheriault/.m2/repository/org/openjfx/javafx-base/23.0.1/javafx-base-23.0.1.jar:/Users/justinetheriault/.m2/repository/org/openjfx/javafx-base/23.0.1/javafx-base-23.0.1-mac-aarch64.jar:/Users/justinetheriault/.m2/repository/org/kordamp/ikonli/ikonli-javafx/12.3.1/ikonli-javafx-12.3.1.jar:/Users/justinetheriault/.m2/repository/org/kordamp/ikonli/ikonli-core/12.3.1/ikonli-core-12.3.1.jar:/Users/justinetheriault/.m2/repository/org/kordamp/ikonli/ikonli-fontawesome5-pack/12.3.1/ikonli-fontawesome5-pack-12.3.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/justinetheriault"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-10-21"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/25.0.1/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/justinetheriault/Downloads/tp-autocompleter"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/justinetheriault/Downloads/tp-autocompleter/target/surefire/surefirebooter-20260326124846568_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="25.0.1"/>
+    <property name="user.name" value="justinetheriault"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="26.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/justinetheriault/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/4f/synjr9pj64q97jrkg39ts9b40000gn/T/"/>
+    <property name="java.version" value="25.0.1"/>
+    <property name="user.dir" value="/Users/justinetheriault/Downloads/tp-autocompleter"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/justinetheriault/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="25.0.1"/>
+    <property name="stdin.encoding" value="UTF-8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="completeKLargerThanMatches" classname="ca.udem.ift2015.autocompleter.student.PrefixTrieTest" time="0.001">
+    <error message="TODO 8 — insert non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
+	at ca.udem.ift2015.autocompleter.student.PrefixTrie.insert(PrefixTrie.java:41)
+	at ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeKLargerThanMatches(PrefixTrieTest.java:144)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="completeWhenPrefixIsWordWithExtensions" classname="ca.udem.ift2015.autocompleter.student.PrefixTrieTest" time="0.001">
+    <error message="TODO 8 — insert non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
+	at ca.udem.ift2015.autocompleter.student.PrefixTrie.insert(PrefixTrie.java:41)
+	at ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeWhenPrefixIsWordWithExtensions(PrefixTrieTest.java:185)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="nodeCountAfterInsertingPrefixOfExistingWord" classname="ca.udem.ift2015.autocompleter.student.PrefixTrieTest" time="0.001">
+    <error message="TODO 8 — insert non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
+	at ca.udem.ift2015.autocompleter.student.PrefixTrie.insert(PrefixTrie.java:41)
+	at ca.udem.ift2015.autocompleter.student.PrefixTrieTest.nodeCountAfterInsertingPrefixOfExistingWord(PrefixTrieTest.java:80)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="completeExactWord_returnsItself" classname="ca.udem.ift2015.autocompleter.student.PrefixTrieTest" time="0.001">
+    <error message="TODO 8 — insert non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
+	at ca.udem.ift2015.autocompleter.student.PrefixTrie.insert(PrefixTrie.java:41)
+	at ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeExactWord_returnsItself(PrefixTrieTest.java:177)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="completeEmptyPrefix_returnsTopK" classname="ca.udem.ift2015.autocompleter.student.PrefixTrieTest" time="0.003">
+    <error message="TODO 8 — insert non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
+	at ca.udem.ift2015.autocompleter.student.PrefixTrie.insert(PrefixTrie.java:41)
+	at ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeEmptyPrefix_returnsTopK(PrefixTrieTest.java:165)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="nodeCountGrowsWithNewChars" classname="ca.udem.ift2015.autocompleter.student.PrefixTrieTest" time="0.001">
+    <error message="TODO 8 — insert non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
+	at ca.udem.ift2015.autocompleter.student.PrefixTrie.insert(PrefixTrie.java:41)
+	at ca.udem.ift2015.autocompleter.student.PrefixTrieTest.nodeCountGrowsWithNewChars(PrefixTrieTest.java:72)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="completeTiebreakLexicographic" classname="ca.udem.ift2015.autocompleter.student.PrefixTrieTest" time="0.001">
+    <error message="TODO 8 — insert non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
+	at ca.udem.ift2015.autocompleter.student.PrefixTrie.insert(PrefixTrie.java:41)
+	at ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeTiebreakLexicographic(PrefixTrieTest.java:120)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="sizeCountsDistinctWords" classname="ca.udem.ift2015.autocompleter.student.PrefixTrieTest" time="0.001">
+    <error message="TODO 8 — insert non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
+	at ca.udem.ift2015.autocompleter.student.PrefixTrie.insert(PrefixTrie.java:41)
+	at ca.udem.ift2015.autocompleter.student.PrefixTrieTest.sizeCountsDistinctWords(PrefixTrieTest.java:64)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="searchOnEmptyTrie_returnsZero" classname="ca.udem.ift2015.autocompleter.student.PrefixTrieTest" time="0.0">
+    <error message="TODO 9 — search non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 9 — search non implémenté
+	at ca.udem.ift2015.autocompleter.student.PrefixTrie.search(PrefixTrie.java:52)
+	at ca.udem.ift2015.autocompleter.student.PrefixTrieTest.searchOnEmptyTrie_returnsZero(PrefixTrieTest.java:32)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="completeReturnsAllMatchesForPrefix" classname="ca.udem.ift2015.autocompleter.student.PrefixTrieTest" time="0.001">
+    <error message="TODO 8 — insert non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
+	at ca.udem.ift2015.autocompleter.student.PrefixTrie.insert(PrefixTrie.java:41)
+	at ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeReturnsAllMatchesForPrefix(PrefixTrieTest.java:95)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="completeKSmallerThanMatches" classname="ca.udem.ift2015.autocompleter.student.PrefixTrieTest" time="0.001">
+    <error message="TODO 8 — insert non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
+	at ca.udem.ift2015.autocompleter.student.PrefixTrie.insert(PrefixTrie.java:41)
+	at ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeKSmallerThanMatches(PrefixTrieTest.java:131)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="completeAbsentPrefix_returnsEmpty" classname="ca.udem.ift2015.autocompleter.student.PrefixTrieTest" time="0.0">
+    <error message="TODO 8 — insert non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
+	at ca.udem.ift2015.autocompleter.student.PrefixTrie.insert(PrefixTrie.java:41)
+	at ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeAbsentPrefix_returnsEmpty(PrefixTrieTest.java:153)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="searchAbsentWord_returnsZero" classname="ca.udem.ift2015.autocompleter.student.PrefixTrieTest" time="0.0">
+    <error message="TODO 8 — insert non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
+	at ca.udem.ift2015.autocompleter.student.PrefixTrie.insert(PrefixTrie.java:41)
+	at ca.udem.ift2015.autocompleter.student.PrefixTrieTest.searchAbsentWord_returnsZero(PrefixTrieTest.java:44)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="searchPrefixOnly_returnsZero" classname="ca.udem.ift2015.autocompleter.student.PrefixTrieTest" time="0.0">
+    <error message="TODO 8 — insert non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
+	at ca.udem.ift2015.autocompleter.student.PrefixTrie.insert(PrefixTrie.java:41)
+	at ca.udem.ift2015.autocompleter.student.PrefixTrieTest.searchPrefixOnly_returnsZero(PrefixTrieTest.java:50)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="insertAndSearchSingleWord" classname="ca.udem.ift2015.autocompleter.student.PrefixTrieTest" time="0.001">
+    <error message="TODO 8 — insert non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
+	at ca.udem.ift2015.autocompleter.student.PrefixTrie.insert(PrefixTrie.java:41)
+	at ca.udem.ift2015.autocompleter.student.PrefixTrieTest.insertAndSearchSingleWord(PrefixTrieTest.java:38)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="completeRankedByDescendingFrequency" classname="ca.udem.ift2015.autocompleter.student.PrefixTrieTest" time="0.0">
+    <error message="TODO 8 — insert non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
+	at ca.udem.ift2015.autocompleter.student.PrefixTrie.insert(PrefixTrie.java:41)
+	at ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeRankedByDescendingFrequency(PrefixTrieTest.java:108)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="insertSameWordAccumulatesFrequency" classname="ca.udem.ift2015.autocompleter.student.PrefixTrieTest" time="0.001">
+    <error message="TODO 8 — insert non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
+	at ca.udem.ift2015.autocompleter.student.PrefixTrie.insert(PrefixTrie.java:41)
+	at ca.udem.ift2015.autocompleter.student.PrefixTrieTest.insertSameWordAccumulatesFrequency(PrefixTrieTest.java:57)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+  <testcase name="completeKZero_returnsEmpty" classname="ca.udem.ift2015.autocompleter.student.PrefixTrieTest" time="0.0">
+    <error message="TODO 8 — insert non implémenté" type="java.lang.UnsupportedOperationException"><![CDATA[java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
+	at ca.udem.ift2015.autocompleter.student.PrefixTrie.insert(PrefixTrie.java:41)
+	at ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeKZero_returnsEmpty(PrefixTrieTest.java:159)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+]]></error>
+  </testcase>
+</testsuite>

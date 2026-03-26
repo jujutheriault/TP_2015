@@ -1,0 +1,132 @@
+-------------------------------------------------------------------------------
+Test set: ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 0, Errors: 16, Skipped: 0, Time elapsed: 0.010 s <<< FAILURE! -- in ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest
+ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest.incrementByInitializesAbsentToken -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 6 — incrementBy non implémenté
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTable.incrementBy(HashFrequencyTable.java:79)
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest.incrementByInitializesAbsentToken(HashFrequencyTableTest.java:129)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest.incrementMultipleTimesAccumulates -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 1 — increment non implémenté
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTable.increment(HashFrequencyTable.java:31)
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest.incrementMultipleTimesAccumulates(HashFrequencyTableTest.java:53)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest.isEmptyAfterIncrementReturnsFalse -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 1 — increment non implémenté
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTable.increment(HashFrequencyTable.java:31)
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest.isEmptyAfterIncrementReturnsFalse(HashFrequencyTableTest.java:114)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest.vocabularyContainsAllIncrementedTokens -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 1 — increment non implémenté
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTable.increment(HashFrequencyTable.java:31)
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest.vocabularyContainsAllIncrementedTokens(HashFrequencyTableTest.java:93)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest.incrementByAccumulatesOnExistingToken -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 1 — increment non implémenté
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTable.increment(HashFrequencyTable.java:31)
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest.incrementByAccumulatesOnExistingToken(HashFrequencyTableTest.java:135)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest.isEmptyOnFreshTableReturnsTrue -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 5 — isEmpty non implémenté
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTable.isEmpty(HashFrequencyTable.java:68)
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest.isEmptyOnFreshTableReturnsTrue(HashFrequencyTableTest.java:120)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest.incrementByUpdatesTotalCount -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 6 — incrementBy non implémenté
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTable.incrementBy(HashFrequencyTable.java:79)
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest.incrementByUpdatesTotalCount(HashFrequencyTableTest.java:142)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest.incrementByWithOneEquivalentToIncrement -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 1 — increment non implémenté
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTable.increment(HashFrequencyTable.java:31)
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest.incrementByWithOneEquivalentToIncrement(HashFrequencyTableTest.java:155)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest.incrementOnceYieldsCountOne -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 1 — increment non implémenté
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTable.increment(HashFrequencyTable.java:31)
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest.incrementOnceYieldsCountOne(HashFrequencyTableTest.java:47)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest.vocabularyIsEmptyOnFreshTable -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 4 — vocabulary non implémenté
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTable.vocabulary(HashFrequencyTable.java:60)
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest.vocabularyIsEmptyOnFreshTable(HashFrequencyTableTest.java:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest.totalCountsAllIncrements -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 1 — increment non implémenté
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTable.increment(HashFrequencyTable.java:31)
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest.totalCountsAllIncrements(HashFrequencyTableTest.java:75)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest.incrementDistinctTokensAreIndependent -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 1 — increment non implémenté
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTable.increment(HashFrequencyTable.java:31)
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest.incrementDistinctTokensAreIndependent(HashFrequencyTableTest.java:61)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest.vocabularyDoesNotContainAbsentToken -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 1 — increment non implémenté
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTable.increment(HashFrequencyTable.java:31)
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest.vocabularyDoesNotContainAbsentToken(HashFrequencyTableTest.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest.getOnAbsentTokenReturnsZero -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 2 — get non implémenté
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTable.get(HashFrequencyTable.java:41)
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest.getOnAbsentTokenReturnsZero(HashFrequencyTableTest.java:37)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest.totalAfterNoIncrementIsZero -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 3 — total non implémenté
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTable.total(HashFrequencyTable.java:52)
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest.totalAfterNoIncrementIsZero(HashFrequencyTableTest.java:84)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest.incrementByAddsTokenToVocabulary -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 6 — incrementBy non implémenté
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTable.incrementBy(HashFrequencyTable.java:79)
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTableTest.incrementByAddsTokenToVocabulary(HashFrequencyTableTest.java:149)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+

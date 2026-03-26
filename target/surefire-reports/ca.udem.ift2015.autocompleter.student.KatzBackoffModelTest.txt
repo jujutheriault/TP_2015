@@ -1,0 +1,197 @@
+-------------------------------------------------------------------------------
+Test set: ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest
+-------------------------------------------------------------------------------
+Tests run: 24, Failures: 0, Errors: 24, Skipped: 0, Time elapsed: 0.037 s <<< FAILURE! -- in ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest
+ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.completeKLargerThanMatches -- Time elapsed: 0.010 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.completeKLargerThanMatches(KatzBackoffModelTest.java:266)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.topKKLargerThanVocab -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.topKKLargerThanVocab(KatzBackoffModelTest.java:166)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.topKNoContext_usesUnigrams -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.topKNoContext_usesUnigrams(KatzBackoffModelTest.java:150)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.countsZeroBeforeTraining -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 4 — vocabulary non implémenté
+	at ca.udem.ift2015.autocompleter.student.HashFrequencyTable.vocabulary(HashFrequencyTable.java:60)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.unigramCount(KatzBackoffModel.java:107)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.countsZeroBeforeTraining(KatzBackoffModelTest.java:54)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.topKUsesTrigramWhenAvailable -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.topKUsesTrigramWhenAvailable(KatzBackoffModelTest.java:111)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.predictOnUntrained_returnsNull -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 13 — predict non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.predict(KatzBackoffModel.java:86)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.predictOnUntrained_returnsNull(KatzBackoffModelTest.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.topKOnUntrained_returnsEmpty -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 12 — topK non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.topK(KatzBackoffModel.java:75)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.topKOnUntrained_returnsEmpty(KatzBackoffModelTest.java:49)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.frequencyReturnsUnigramCount -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.frequencyReturnsUnigramCount(KatzBackoffModelTest.java:206)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.trigramCountAfterTraining -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.trigramCountAfterTraining(KatzBackoffModelTest.java:80)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.topKBackoffToUnigramWhenNoBigram -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.topKBackoffToUnigramWhenNoBigram(KatzBackoffModelTest.java:140)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.topKDoubleBackoffToUnigram -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.topKDoubleBackoffToUnigram(KatzBackoffModelTest.java:189)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.topKZeroReturnsEmpty -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.topKZeroReturnsEmpty(KatzBackoffModelTest.java:160)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.topKBackoffToBigramWhenNoTrigram -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.topKBackoffToBigramWhenNoTrigram(KatzBackoffModelTest.java:125)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.completeRankedByFrequency -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.completeRankedByFrequency(KatzBackoffModelTest.java:243)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.completeUnknownPrefix_returnsEmpty -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.completeUnknownPrefix_returnsEmpty(KatzBackoffModelTest.java:254)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.trainingAccumulatesBigramCount -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.trainingAccumulatesBigramCount(KatzBackoffModelTest.java:198)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.completeReturnsWordsWithPrefix -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.completeReturnsWordsWithPrefix(KatzBackoffModelTest.java:232)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.bigramCountAfterTraining -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.bigramCountAfterTraining(KatzBackoffModelTest.java:73)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.sentenceBoundaryResetsContext -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.sentenceBoundaryResetsContext(KatzBackoffModelTest.java:95)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.strictBackoffTrigramNotFilledFromBigram -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.strictBackoffTrigramNotFilledFromBigram(KatzBackoffModelTest.java:175)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.completeKZero_returnsEmpty -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.completeKZero_returnsEmpty(KatzBackoffModelTest.java:260)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.trainingAccumulatesAcrossSentences -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.trainingAccumulatesAcrossSentences(KatzBackoffModelTest.java:86)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.unigramCountAfterTraining -- Time elapsed: 0 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.unigramCountAfterTraining(KatzBackoffModelTest.java:66)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.predictTwoWords_trigram -- Time elapsed: 0.001 s <<< ERROR!
+java.lang.UnsupportedOperationException: TODO 11 — train non implémenté
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModel.train(KatzBackoffModel.java:52)
+	at ca.udem.ift2015.autocompleter.student.KatzBackoffModelTest.predictTwoWords_trigram(KatzBackoffModelTest.java:218)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
