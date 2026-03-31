@@ -28,12 +28,7 @@ public class HashFrequencyTable implements FrequencyTable {
      */
     @Override
     public void increment(String token) {
-        if (map.containsKey(token)) {
-            map.put(token, map.get(token) + 1);
-        } else {
-            map.put(token, 1);
-        }
-        totalCount++;
+        throw new UnsupportedOperationException("TODO 1 — increment non implémenté");
     }
 
     /**
@@ -43,10 +38,7 @@ public class HashFrequencyTable implements FrequencyTable {
      */
     @Override
     public int get(String token) {
-        if (map.containsKey(token)) {
-            return map.get(token);
-        }
-        return 0; 
+        throw new UnsupportedOperationException("TODO 2 — get non implémenté");
     }
 
     /**
@@ -57,7 +49,7 @@ public class HashFrequencyTable implements FrequencyTable {
      */
     @Override
     public int total() {
-        return totalCount;
+        throw new UnsupportedOperationException("TODO 3 — total non implémenté");
     }
 
     /**
@@ -65,7 +57,7 @@ public class HashFrequencyTable implements FrequencyTable {
      */
     @Override
     public Set<String> vocabulary() {
-        return map.keySet();
+        throw new UnsupportedOperationException("TODO 4 — vocabulary non implémenté");
     }
 
     /**
@@ -73,7 +65,7 @@ public class HashFrequencyTable implements FrequencyTable {
      */
     @Override
     public boolean isEmpty() {
-        return map.isEmpty();
+        throw new UnsupportedOperationException("TODO 5 — isEmpty non implémenté");
     }
 
     /**
@@ -84,11 +76,6 @@ public class HashFrequencyTable implements FrequencyTable {
      */
     @Override
     public void incrementBy(String token, int count) {
-        if (map.containsKey(token)) {
-            map.put(token, map.get(token) + count);
-        } else {
-            map.put(token, count);
-        }
-        totalCount += count ;
+        throw new UnsupportedOperationException("TODO 6 — incrementBy non implémenté");
     }
 }
