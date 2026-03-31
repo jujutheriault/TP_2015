@@ -21,7 +21,6 @@ public class HashFrequencyTable implements FrequencyTable {
     private int totalCount = 0;
 
     /**
-     * TODO 1 — Incrémenter le compteur d'un token.
      *
      * <p>Si le token n'est pas encore présent, son compteur passe à 1.
      * Le compteur global {@code totalCount} est mis à jour à chaque appel.
@@ -37,7 +36,6 @@ public class HashFrequencyTable implements FrequencyTable {
     }
 
     /**
-     * TODO 2 — Retourner le compteur d'un token.
      *
      * <p>Retourne 0 si le token est absent.
      */
@@ -50,7 +48,6 @@ public class HashFrequencyTable implements FrequencyTable {
     }
 
     /**
-     * TODO 3 — Retourner le nombre total d'occurrences (somme de tous les compteurs).
      *
      * <p>Ce total doit être maintenu en temps constant — ne pas recalculer
      * à chaque appel.
@@ -61,7 +58,7 @@ public class HashFrequencyTable implements FrequencyTable {
     }
 
     /**
-     * TODO 4 — Retourner l'ensemble des tokens connus.
+     * Retourner l'ensemble des tokens connus.
      */
     @Override
     public Set<String> vocabulary() {
@@ -69,7 +66,7 @@ public class HashFrequencyTable implements FrequencyTable {
     }
 
     /**
-     * TODO 5 — Retourner {@code true} si aucun token n'a encore été incrémenté.
+     * Retourner {@code true} si aucun token n'a encore été incrémenté.
      */
     @Override
     public boolean isEmpty() {
@@ -77,7 +74,7 @@ public class HashFrequencyTable implements FrequencyTable {
     }
 
     /**
-     * TODO 6 — Ajouter {@code count} au compteur du token donné.
+     * Ajouter {@code count} au compteur du token donné.
      *
      * <p>Si le token est absent, l'initialiser à {@code count}.
      * Mettre à jour {@code totalCount} en conséquence.
