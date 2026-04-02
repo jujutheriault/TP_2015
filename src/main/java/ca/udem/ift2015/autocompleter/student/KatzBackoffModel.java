@@ -1,13 +1,14 @@
 package ca.udem.ift2015.autocompleter.student;
 
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import ca.udem.ift2015.autocompleter.model.FrequencyTable;
 import ca.udem.ift2015.autocompleter.model.NGramModel;
 import ca.udem.ift2015.autocompleter.model.TopKStrategy;
 import ca.udem.ift2015.autocompleter.model.Trie;
-
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 /**
  * Modèle de langage trigramme avec repli de Katz (Katz Backoff).
@@ -49,7 +50,37 @@ public class KatzBackoffModel implements NGramModel {
      */
     @Override
     public void train(List<List<String>> sentences) {
-        throw new UnsupportedOperationException("TODO 11 — train non implémenté");
+        for (List<String> sentence : sentences) {
+            for (int i = 0; i < sentence.size(); i++) {
+                String current = sentence.get(i);
+
+                // Unigrammes
+                unigrams.increment(current);
+
+                // Trie
+                trie.insert(current);
+
+                // Bigrammes
+                if (i >= 1) {
+                    String previous = sentence.get(i - 1);
+
+                    if (!bigrams.containsKey(previous)) {
+                        bigrams.put(previous, new HashFrequencyTable());
+                    }
+                    bigrams.get(previous).increment(current);
+                }
+
+                // Trigrammes 
+                if (i >= 2) {
+                    String key = sentence.get(i - 2) + " " + sentence.get(i - 1);
+
+                    if (!trigrams.containsKey(key)) {
+                        trigrams.put(key, new HashFrequencyTable());
+                    }
+                    trigrams.get(key).increment(current);
+                }
+            }
+        }
     }
 
     /**
@@ -72,7 +103,26 @@ public class KatzBackoffModel implements NGramModel {
      */
     @Override
     public List<String> topK(int k, String... context) {
-        throw new UnsupportedOperationException("TODO 12 — topK non implémenté");
+        if (k <= 0 || unigrams.isEmpty()) {
+            return Collections.emptyList();
+        }
+
+        // Pour niveau trigramme
+        if (context.length >= 2) {
+            String key = context[context.length - 2] + " " + context[context.length - 1];
+            if (trigrams.containsKey(key)) {
+                return strategy.topK(trigrams.get(key), k);
+            }
+        }
+
+        // Niveau bigramme
+        if (context.length >= 1) {
+            String previous = context[context.length - 1];
+            if (bigrams.containsKey(previous)) {
+                return strategy.topK(bigrams.get(previous), k);
+            }
+        }
+        return strategy.topK(unigrams, k);
     }
 
     /**
@@ -83,7 +133,11 @@ public class KatzBackoffModel implements NGramModel {
      */
     @Override
     public String predict(String... context) {
-        throw new UnsupportedOperationException("TODO 13 — predict non implémenté");
+        List<String> predictions = topK(1, context);
+        if (predictions.isEmpty()) {
+            return null;
+        }
+        return predictions.get(0);
     }
 
     /**
@@ -93,7 +147,7 @@ public class KatzBackoffModel implements NGramModel {
      */
     @Override
     public List<String> complete(String prefix, int k) {
-        throw new UnsupportedOperationException("TODO 14 — complete non implémenté");
+        return trie.complete(prefix, k);
     }
 
     /** Fourni — délègue à unigrams.get() (fonctionnel dès que TODO 2 est implémenté). */

@@ -17,6 +17,7 @@ import ca.udem.ift2015.autocompleter.model.TopKStrategy;
 public class HeapTopKStrategy implements TopKStrategy {
 
     /**
+     * 
      * Retourner les {@code k} tokens les plus fréquents de {@code table},
      * triés par fréquence décroissante (à égalité : ordre lexicographique croissant).
      *

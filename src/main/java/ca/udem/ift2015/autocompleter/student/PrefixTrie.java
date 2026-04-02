@@ -1,11 +1,11 @@
 package ca.udem.ift2015.autocompleter.student;
 
-import ca.udem.ift2015.autocompleter.model.FrequencyTable;
-import ca.udem.ift2015.autocompleter.model.Trie;
-
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
+
+import ca.udem.ift2015.autocompleter.model.FrequencyTable;
+import ca.udem.ift2015.autocompleter.model.Trie;
 
 /**
  * Trie (arbre préfixe) associant chaque mot à sa fréquence.
@@ -38,7 +38,24 @@ public class PrefixTrie implements Trie {
      * à {@code node.frequency}.
      */
     public void insert(String word, int frequency) {
-        throw new UnsupportedOperationException("TODO 8 — insert non implémenté");
+        TrieNode current = root;
+
+        for (int i=0; i< word.length(); i++) {
+            char c = word.charAt(i);
+            
+            if (!current.children.containsKey(c)) {
+                current.children.put(c, new TrieNode());
+                nodeCount++;
+            }
+            current = current.children.get(c);
+        }
+
+        current.frequency += frequency ;
+
+        if (!current.isEndOfWord) {
+            current.isEndOfWord = true;
+            size++;
+        }
     }
 
     /**
@@ -49,7 +66,23 @@ public class PrefixTrie implements Trie {
      * seulement si {@code node.isEndOfWord} est vrai.
      */
     public int search(String word) {
-        throw new UnsupportedOperationException("TODO 9 — search non implémenté");
+        TrieNode current = root;
+
+        for (int i=0; i< word.length(); i++) {
+            char c = word.charAt(i);
+        
+            if (!current.children.containsKey(c)) {
+                return 0;
+            }
+
+            current = current.children.get(c);
+        }
+
+        if (current.isEndOfWord) {
+            return current.frequency;
+        }
+
+        return 0; 
     }
 
     /**
@@ -67,7 +100,25 @@ public class PrefixTrie implements Trie {
      * </ol>
      */
     public List<String> complete(String prefix, int k) {
-        throw new UnsupportedOperationException("TODO 10 — complete non implémenté");
+        if (k <= 0) {
+            return Collections.emptyList();
+        }
+
+        TrieNode current = root; 
+
+        for (int i = 0; i < prefix.length(); i++) {
+            char c = prefix.charAt(i);
+
+            if (!current.children.containsKey(c)) {
+                return Collections.emptyList();
+            }
+
+            current = current.children.get(c);
+
+        }
+
+        FrequencyTable table = dfs(current, new StringBuilder(prefix));
+        return new HeapTopKStrategy().topK(table, k);
     }
 
     /**
