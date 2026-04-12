@@ -1,4 +1,4 @@
-ca/udem/ift2015/autocompleter/student/HashFrequencyTableTest.class
-ca/udem/ift2015/autocompleter/student/PrefixTrieTest.class
-ca/udem/ift2015/autocompleter/student/KatzBackoffModelTest.class
-ca/udem/ift2015/autocompleter/student/HeapTopKStrategyTest.class
+ca\udem\ift2015\autocompleter\student\PrefixTrieTest.class
+ca\udem\ift2015\autocompleter\student\HeapTopKStrategyTest.class
+ca\udem\ift2015\autocompleter\student\KatzBackoffModelTest.class
+ca\udem\ift2015\autocompleter\student\HashFrequencyTableTest.class

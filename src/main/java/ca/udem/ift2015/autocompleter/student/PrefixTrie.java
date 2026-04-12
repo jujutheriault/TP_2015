@@ -39,12 +39,13 @@ public class PrefixTrie implements Trie {
      */
     public void insert(String word, int frequency) {
         TrieNode current = root;
-
+        // ici on parcourt tout les caractères du mot
         for (int i=0; i< word.length(); i++) {
             char c = word.charAt(i);
-            
+            // si le noeud n'existe pas encore on le crée
             if (!current.children.containsKey(c)) {
                 current.children.put(c, new TrieNode());
+                // on incrémente le nomre de noeuds qui sont créés
                 nodeCount++;
             }
             current = current.children.get(c);
@@ -52,6 +53,7 @@ public class PrefixTrie implements Trie {
 
         current.frequency += frequency ;
 
+        // si c'est un nouveau mot qu'on insère, on incrémente le nombre de mots distincts
         if (!current.isEndOfWord) {
             current.isEndOfWord = true;
             size++;
@@ -67,21 +69,22 @@ public class PrefixTrie implements Trie {
      */
     public int search(String word) {
         TrieNode current = root;
-
+        // On descend caractère par caractère
         for (int i=0; i< word.length(); i++) {
             char c = word.charAt(i);
-        
+
+        // si un caractère est absent alors le mot n'existe pas
             if (!current.children.containsKey(c)) {
                 return 0;
             }
 
             current = current.children.get(c);
         }
-
+        // Si le mot est valide on retourne la fréquence
         if (current.isEndOfWord) {
             return current.frequency;
         }
-
+        // si non le chemin ne correspond pas à un mot valide
         return 0; 
     }
 
@@ -100,21 +103,21 @@ public class PrefixTrie implements Trie {
      * </ol>
      */
     public List<String> complete(String prefix, int k) {
+        //aucun résultat si k est invalide
         if (k <= 0) {
             return Collections.emptyList();
         }
 
         TrieNode current = root; 
-
+        // on se positionne sur le noeud qui correspond au prefixe
         for (int i = 0; i < prefix.length(); i++) {
             char c = prefix.charAt(i);
-
+            // si le prefixe n'existe pas alors aucun mot possible
             if (!current.children.containsKey(c)) {
                 return Collections.emptyList();
             }
 
             current = current.children.get(c);
-
         }
 
         FrequencyTable table = dfs(current, new StringBuilder(prefix));

@@ -34,22 +34,29 @@ public class HeapTopKStrategy implements TopKStrategy {
      */
     @Override
     public List<String> topK(FrequencyTable table, int k) {
+        // si k est invalide on retourne une liste vide
         if ( k <= 0 ||table.isEmpty()) {
             return new ArrayList<>();
         }
 
         Comparator<String> comparator = (a,b) -> {
+            // on compare les fréquences des 2 tokenss
             int freqCroissance = Integer.compare(table.get(a), table.get(b));
+
+            // si les fréquences sont différentes on retourne le résultat
             if (freqCroissance != 0) {
                 return freqCroissance;
             }
+            // si non on les compares
             return b.compareTo(a);
         };
 
+        // min heap du comparateur
         PriorityQueue<String> heap = new PriorityQueue<>(comparator);
-
+        // On parcourt les tokens puis on ajoute le nouveau token dans le tas
         for (String token : table.vocabulary()) {
             heap.offer(token);
+            // Si la taille du tas est supérieur a k on retire le moins bon élément
             if (heap.size() > k) {
                 heap.poll();
             }

@@ -50,33 +50,37 @@ public class KatzBackoffModel implements NGramModel {
      */
     @Override
     public void train(List<List<String>> sentences) {
+
+        // on parcourt chaque phrases du corpus et chaque mot de la phrase
         for (List<String> sentence : sentences) {
             for (int i = 0; i < sentence.size(); i++) {
                 String current = sentence.get(i);
 
-                // Unigrammes
+                // (Unigrammes) On incrémente la férquence du mot
                 unigrams.increment(current);
 
                 // Trie
                 trie.insert(current);
 
-                // Bigrammes
+                // (Bigrammes) relation mot précédent - mot courant
                 if (i >= 1) {
                     String previous = sentence.get(i - 1);
-
+                    // on crée une table pour le mot précédent (si elle n'existe pas déjà)
                     if (!bigrams.containsKey(previous)) {
                         bigrams.put(previous, new HashFrequencyTable());
                     }
+                    // Transition previous - current
                     bigrams.get(previous).increment(current);
                 }
 
-                // Trigrammes 
+                // (Trigrammes) relation 2 mots précédents - mot courant
                 if (i >= 2) {
                     String key = sentence.get(i - 2) + " " + sentence.get(i - 1);
-
+                    // on crée une tale si besoin
                     if (!trigrams.containsKey(key)) {
                         trigrams.put(key, new HashFrequencyTable());
                     }
+                    // ajout de la transition
                     trigrams.get(key).increment(current);
                 }
             }
@@ -109,7 +113,9 @@ public class KatzBackoffModel implements NGramModel {
 
         // Pour niveau trigramme
         if (context.length >= 2) {
+            // on fait la clé avec les 2 derniers mots
             String key = context[context.length - 2] + " " + context[context.length - 1];
+            // si le trigramme existe alors on l'utilise
             if (trigrams.containsKey(key)) {
                 return strategy.topK(trigrams.get(key), k);
             }
@@ -117,11 +123,14 @@ public class KatzBackoffModel implements NGramModel {
 
         // Niveau bigramme
         if (context.length >= 1) {
+            // on prend le dernier mot comme contexte
             String previous = context[context.length - 1];
+            // si le bigramme existe on l'utilise
             if (bigrams.containsKey(previous)) {
                 return strategy.topK(bigrams.get(previous), k);
             }
         }
+        // si non fallback sur les unigrammes
         return strategy.topK(unigrams, k);
     }
 
@@ -133,10 +142,13 @@ public class KatzBackoffModel implements NGramModel {
      */
     @Override
     public String predict(String... context) {
+        //on récupere le meilleur mot (top 1)
         List<String> predictions = topK(1, context);
+        // si aucun résultat alors null
         if (predictions.isEmpty()) {
             return null;
         }
+        // si non on retourne le mot le plus probable
         return predictions.get(0);
     }
 

@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: ca.udem.ift2015.autocompleter.student.HeapTopKStrategyTest
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 0, Errors: 10, Skipped: 0, Time elapsed: 0.007 s <<< FAILURE! -- in ca.udem.ift2015.autocompleter.student.HeapTopKStrategyTest
-ca.udem.ift2015.autocompleter.student.HeapTopKStrategyTest.tiebreakBetweenTwoTokensOnly -- Time elapsed: 0 s <<< ERROR!
+Tests run: 10, Failures: 0, Errors: 10, Skipped: 0, Time elapsed: 0.030 s <<< FAILURE! -- in ca.udem.ift2015.autocompleter.student.HeapTopKStrategyTest
+ca.udem.ift2015.autocompleter.student.HeapTopKStrategyTest.tiebreakBetweenTwoTokensOnly -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: TODO 1 — increment non implémenté
 	at ca.udem.ift2015.autocompleter.student.HashFrequencyTable.increment(HashFrequencyTable.java:31)
 	at ca.udem.ift2015.autocompleter.student.HeapTopKStrategyTest.tableOf(HeapTopKStrategyTest.java:27)
@@ -11,7 +11,7 @@ java.lang.UnsupportedOperationException: TODO 1 — increment non implémenté
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-ca.udem.ift2015.autocompleter.student.HeapTopKStrategyTest.singleTokenTable -- Time elapsed: 0 s <<< ERROR!
+ca.udem.ift2015.autocompleter.student.HeapTopKStrategyTest.singleTokenTable -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: TODO 1 — increment non implémenté
 	at ca.udem.ift2015.autocompleter.student.HashFrequencyTable.increment(HashFrequencyTable.java:31)
 	at ca.udem.ift2015.autocompleter.student.HeapTopKStrategyTest.tableOf(HeapTopKStrategyTest.java:27)
@@ -29,7 +29,7 @@ java.lang.UnsupportedOperationException: TODO 1 — increment non implémenté
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-ca.udem.ift2015.autocompleter.student.HeapTopKStrategyTest.resultsAreOrderedByDescendingFrequency -- Time elapsed: 0 s <<< ERROR!
+ca.udem.ift2015.autocompleter.student.HeapTopKStrategyTest.resultsAreOrderedByDescendingFrequency -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: TODO 1 — increment non implémenté
 	at ca.udem.ift2015.autocompleter.student.HashFrequencyTable.increment(HashFrequencyTable.java:31)
 	at ca.udem.ift2015.autocompleter.student.HeapTopKStrategyTest.tableOf(HeapTopKStrategyTest.java:27)
@@ -38,7 +38,7 @@ java.lang.UnsupportedOperationException: TODO 1 — increment non implémenté
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-ca.udem.ift2015.autocompleter.student.HeapTopKStrategyTest.kGreaterThanVocabReturnsAllTokens -- Time elapsed: 0 s <<< ERROR!
+ca.udem.ift2015.autocompleter.student.HeapTopKStrategyTest.kGreaterThanVocabReturnsAllTokens -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: TODO 1 — increment non implémenté
 	at ca.udem.ift2015.autocompleter.student.HashFrequencyTable.increment(HashFrequencyTable.java:31)
 	at ca.udem.ift2015.autocompleter.student.HeapTopKStrategyTest.tableOf(HeapTopKStrategyTest.java:27)
@@ -47,7 +47,7 @@ java.lang.UnsupportedOperationException: TODO 1 — increment non implémenté
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-ca.udem.ift2015.autocompleter.student.HeapTopKStrategyTest.tiebreakIsLexicographicAscending -- Time elapsed: 0.001 s <<< ERROR!
+ca.udem.ift2015.autocompleter.student.HeapTopKStrategyTest.tiebreakIsLexicographicAscending -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: TODO 1 — increment non implémenté
 	at ca.udem.ift2015.autocompleter.student.HashFrequencyTable.increment(HashFrequencyTable.java:31)
 	at ca.udem.ift2015.autocompleter.student.HeapTopKStrategyTest.tableOf(HeapTopKStrategyTest.java:27)
@@ -56,7 +56,7 @@ java.lang.UnsupportedOperationException: TODO 1 — increment non implémenté
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-ca.udem.ift2015.autocompleter.student.HeapTopKStrategyTest.emptyTableReturnsEmptyList -- Time elapsed: 0 s <<< ERROR!
+ca.udem.ift2015.autocompleter.student.HeapTopKStrategyTest.emptyTableReturnsEmptyList -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: TODO 7 — topK non implémenté
 	at ca.udem.ift2015.autocompleter.student.HeapTopKStrategy.topK(HeapTopKStrategy.java:36)
 	at ca.udem.ift2015.autocompleter.student.HeapTopKStrategyTest.emptyTableReturnsEmptyList(HeapTopKStrategyTest.java:50)
@@ -64,7 +64,7 @@ java.lang.UnsupportedOperationException: TODO 7 — topK non implémenté
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-ca.udem.ift2015.autocompleter.student.HeapTopKStrategyTest.topOneReturnsHighestFrequencyToken -- Time elapsed: 0.001 s <<< ERROR!
+ca.udem.ift2015.autocompleter.student.HeapTopKStrategyTest.topOneReturnsHighestFrequencyToken -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: TODO 1 — increment non implémenté
 	at ca.udem.ift2015.autocompleter.student.HashFrequencyTable.increment(HashFrequencyTable.java:31)
 	at ca.udem.ift2015.autocompleter.student.HeapTopKStrategyTest.tableOf(HeapTopKStrategyTest.java:27)
@@ -73,7 +73,7 @@ java.lang.UnsupportedOperationException: TODO 1 — increment non implémenté
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-ca.udem.ift2015.autocompleter.student.HeapTopKStrategyTest.kNegativeReturnsEmptyList -- Time elapsed: 0 s <<< ERROR!
+ca.udem.ift2015.autocompleter.student.HeapTopKStrategyTest.kNegativeReturnsEmptyList -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: TODO 1 — increment non implémenté
 	at ca.udem.ift2015.autocompleter.student.HashFrequencyTable.increment(HashFrequencyTable.java:31)
 	at ca.udem.ift2015.autocompleter.student.HeapTopKStrategyTest.tableOf(HeapTopKStrategyTest.java:27)
@@ -82,7 +82,7 @@ java.lang.UnsupportedOperationException: TODO 1 — increment non implémenté
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-ca.udem.ift2015.autocompleter.student.HeapTopKStrategyTest.tiebreakInTopK -- Time elapsed: 0.001 s <<< ERROR!
+ca.udem.ift2015.autocompleter.student.HeapTopKStrategyTest.tiebreakInTopK -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: TODO 1 — increment non implémenté
 	at ca.udem.ift2015.autocompleter.student.HashFrequencyTable.increment(HashFrequencyTable.java:31)
 	at ca.udem.ift2015.autocompleter.student.HeapTopKStrategyTest.tableOf(HeapTopKStrategyTest.java:27)

@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: ca.udem.ift2015.autocompleter.student.PrefixTrieTest
 -------------------------------------------------------------------------------
-Tests run: 18, Failures: 0, Errors: 18, Skipped: 0, Time elapsed: 0.021 s <<< FAILURE! -- in ca.udem.ift2015.autocompleter.student.PrefixTrieTest
-ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeKLargerThanMatches -- Time elapsed: 0.001 s <<< ERROR!
+Tests run: 18, Failures: 0, Errors: 18, Skipped: 0, Time elapsed: 0.051 s <<< FAILURE! -- in ca.udem.ift2015.autocompleter.student.PrefixTrieTest
+ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeKLargerThanMatches -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
 	at ca.udem.ift2015.autocompleter.student.PrefixTrie.insert(PrefixTrie.java:41)
 	at ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeKLargerThanMatches(PrefixTrieTest.java:144)
@@ -10,7 +10,7 @@ java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeWhenPrefixIsWordWithExtensions -- Time elapsed: 0.001 s <<< ERROR!
+ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeWhenPrefixIsWordWithExtensions -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
 	at ca.udem.ift2015.autocompleter.student.PrefixTrie.insert(PrefixTrie.java:41)
 	at ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeWhenPrefixIsWordWithExtensions(PrefixTrieTest.java:185)
@@ -34,7 +34,7 @@ java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeEmptyPrefix_returnsTopK -- Time elapsed: 0.003 s <<< ERROR!
+ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeEmptyPrefix_returnsTopK -- Time elapsed: 0.001 s <<< ERROR!
 java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
 	at ca.udem.ift2015.autocompleter.student.PrefixTrie.insert(PrefixTrie.java:41)
 	at ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeEmptyPrefix_returnsTopK(PrefixTrieTest.java:165)
@@ -42,7 +42,7 @@ java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-ca.udem.ift2015.autocompleter.student.PrefixTrieTest.nodeCountGrowsWithNewChars -- Time elapsed: 0.001 s <<< ERROR!
+ca.udem.ift2015.autocompleter.student.PrefixTrieTest.nodeCountGrowsWithNewChars -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
 	at ca.udem.ift2015.autocompleter.student.PrefixTrie.insert(PrefixTrie.java:41)
 	at ca.udem.ift2015.autocompleter.student.PrefixTrieTest.nodeCountGrowsWithNewChars(PrefixTrieTest.java:72)
@@ -50,7 +50,7 @@ java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeTiebreakLexicographic -- Time elapsed: 0.001 s <<< ERROR!
+ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeTiebreakLexicographic -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
 	at ca.udem.ift2015.autocompleter.student.PrefixTrie.insert(PrefixTrie.java:41)
 	at ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeTiebreakLexicographic(PrefixTrieTest.java:120)
@@ -58,7 +58,7 @@ java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-ca.udem.ift2015.autocompleter.student.PrefixTrieTest.sizeCountsDistinctWords -- Time elapsed: 0.001 s <<< ERROR!
+ca.udem.ift2015.autocompleter.student.PrefixTrieTest.sizeCountsDistinctWords -- Time elapsed: 0.003 s <<< ERROR!
 java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
 	at ca.udem.ift2015.autocompleter.student.PrefixTrie.insert(PrefixTrie.java:41)
 	at ca.udem.ift2015.autocompleter.student.PrefixTrieTest.sizeCountsDistinctWords(PrefixTrieTest.java:64)
@@ -66,7 +66,7 @@ java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-ca.udem.ift2015.autocompleter.student.PrefixTrieTest.searchOnEmptyTrie_returnsZero -- Time elapsed: 0 s <<< ERROR!
+ca.udem.ift2015.autocompleter.student.PrefixTrieTest.searchOnEmptyTrie_returnsZero -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: TODO 9 — search non implémenté
 	at ca.udem.ift2015.autocompleter.student.PrefixTrie.search(PrefixTrie.java:52)
 	at ca.udem.ift2015.autocompleter.student.PrefixTrieTest.searchOnEmptyTrie_returnsZero(PrefixTrieTest.java:32)
@@ -82,7 +82,7 @@ java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeKSmallerThanMatches -- Time elapsed: 0.001 s <<< ERROR!
+ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeKSmallerThanMatches -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
 	at ca.udem.ift2015.autocompleter.student.PrefixTrie.insert(PrefixTrie.java:41)
 	at ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeKSmallerThanMatches(PrefixTrieTest.java:131)
@@ -90,7 +90,7 @@ java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeAbsentPrefix_returnsEmpty -- Time elapsed: 0 s <<< ERROR!
+ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeAbsentPrefix_returnsEmpty -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
 	at ca.udem.ift2015.autocompleter.student.PrefixTrie.insert(PrefixTrie.java:41)
 	at ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeAbsentPrefix_returnsEmpty(PrefixTrieTest.java:153)
@@ -98,7 +98,7 @@ java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-ca.udem.ift2015.autocompleter.student.PrefixTrieTest.searchAbsentWord_returnsZero -- Time elapsed: 0 s <<< ERROR!
+ca.udem.ift2015.autocompleter.student.PrefixTrieTest.searchAbsentWord_returnsZero -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
 	at ca.udem.ift2015.autocompleter.student.PrefixTrie.insert(PrefixTrie.java:41)
 	at ca.udem.ift2015.autocompleter.student.PrefixTrieTest.searchAbsentWord_returnsZero(PrefixTrieTest.java:44)
@@ -106,7 +106,7 @@ java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-ca.udem.ift2015.autocompleter.student.PrefixTrieTest.searchPrefixOnly_returnsZero -- Time elapsed: 0 s <<< ERROR!
+ca.udem.ift2015.autocompleter.student.PrefixTrieTest.searchPrefixOnly_returnsZero -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
 	at ca.udem.ift2015.autocompleter.student.PrefixTrie.insert(PrefixTrie.java:41)
 	at ca.udem.ift2015.autocompleter.student.PrefixTrieTest.searchPrefixOnly_returnsZero(PrefixTrieTest.java:50)
@@ -114,7 +114,7 @@ java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-ca.udem.ift2015.autocompleter.student.PrefixTrieTest.insertAndSearchSingleWord -- Time elapsed: 0.001 s <<< ERROR!
+ca.udem.ift2015.autocompleter.student.PrefixTrieTest.insertAndSearchSingleWord -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
 	at ca.udem.ift2015.autocompleter.student.PrefixTrie.insert(PrefixTrie.java:41)
 	at ca.udem.ift2015.autocompleter.student.PrefixTrieTest.insertAndSearchSingleWord(PrefixTrieTest.java:38)
@@ -122,7 +122,7 @@ java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeRankedByDescendingFrequency -- Time elapsed: 0 s <<< ERROR!
+ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeRankedByDescendingFrequency -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
 	at ca.udem.ift2015.autocompleter.student.PrefixTrie.insert(PrefixTrie.java:41)
 	at ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeRankedByDescendingFrequency(PrefixTrieTest.java:108)
@@ -138,7 +138,7 @@ java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
 
-ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeKZero_returnsEmpty -- Time elapsed: 0 s <<< ERROR!
+ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeKZero_returnsEmpty -- Time elapsed: 0.002 s <<< ERROR!
 java.lang.UnsupportedOperationException: TODO 8 — insert non implémenté
 	at ca.udem.ift2015.autocompleter.student.PrefixTrie.insert(PrefixTrie.java:41)
 	at ca.udem.ift2015.autocompleter.student.PrefixTrieTest.completeKZero_returnsEmpty(PrefixTrieTest.java:159)

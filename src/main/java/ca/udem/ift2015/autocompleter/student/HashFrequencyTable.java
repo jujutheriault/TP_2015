@@ -28,10 +28,14 @@ public class HashFrequencyTable implements FrequencyTable {
     @Override
     public void increment(String token) {
         if (map.containsKey(token)) {
+            // Si le token est déjà présent on augmente son compteur
             map.put(token, map.get(token) + 1);
         } else {
+            // Si le token est nouveau on l'ajoute avec un compteur
             map.put(token, 1);
+
         }
+        // MAJ du totalCount
         totalCount++;
     }
 
@@ -41,9 +45,11 @@ public class HashFrequencyTable implements FrequencyTable {
      */
     @Override
     public int get(String token) {
+        // Si le tokn existe on va retourner sa fréquence
         if (map.containsKey(token)) {
             return map.get(token);
         }
+        // si non sa fréquence est de 0
         return 0; 
     }
 
@@ -54,6 +60,7 @@ public class HashFrequencyTable implements FrequencyTable {
      */
     @Override
     public int total() {
+        //retour direct, complexité O(1)
         return totalCount;
     }
 
@@ -81,11 +88,15 @@ public class HashFrequencyTable implements FrequencyTable {
      */
     @Override
     public void incrementBy(String token, int count) {
+        // si le token existe
         if (map.containsKey(token)) {
+            // alors on ajoute son count à la valeur actuelle
             map.put(token, map.get(token) + count);
         } else {
+            // si non on initialise un nouveau token
             map.put(token, count);
         }
+        // MAJ de total count (maintient O(1))
         totalCount += count ;
     }
 }
