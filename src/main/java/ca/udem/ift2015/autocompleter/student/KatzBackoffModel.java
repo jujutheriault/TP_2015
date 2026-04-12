@@ -38,7 +38,7 @@ public class KatzBackoffModel implements NGramModel {
     }
 
     /**
-     * TODO 11 — Entraîner le modèle sur une liste de phrases tokenisées.
+     * Entraîne le modèle sur une liste de phrases tokenisées.
      *
      * <p>Pour chaque phrase et chaque position {@code i} :
      * <ul>
@@ -88,7 +88,7 @@ public class KatzBackoffModel implements NGramModel {
     }
 
     /**
-     * TODO 12 — Retourner les k mots les plus probables étant donné le contexte.
+     *  Retourne les k mots les plus probables étant donné le contexte.
      *
      * <p><b>Repli strict de Katz (pas de mélange inter-niveaux) :</b> dès qu'un niveau
      * possède des données pour le contexte donné, on l'utilise exclusivement.
@@ -135,7 +135,7 @@ public class KatzBackoffModel implements NGramModel {
     }
 
     /**
-     * TODO 13 — Prédire le mot suivant le plus probable.
+     * Prédit le mot suivant le plus probable.
      *
      * <p>Déléguer à {@code topK(1, context)} et retourner le premier élément,
      * ou {@code null} si la liste est vide.
@@ -153,7 +153,7 @@ public class KatzBackoffModel implements NGramModel {
     }
 
     /**
-     * TODO 14 — Retourner les k mots du trie commençant par {@code prefix}.
+     * Retourne les k mots du trie commençant par {@code prefix}.
      *
      * <p>Déléguer à {@code trie.complete(prefix, k)}.
      */
